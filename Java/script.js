@@ -1,12 +1,30 @@
 
 
+const fci1 = 0.0135
+const fci2 = 0.0200
+const fci3 = 0.1000
+const fci4 = 0.2000
+
+function rendimiento(tiempo = 0, fci1){
+    return(fci1*tiempo)
+}
+
+function rendimiento(tiempo = 0, fci2){
+    return(fci2*tiempo)
+}
+
+function rendimiento(tiempo = 0, fci3){
+    return(fci3*tiempo)
+}
+
+function rendimiento(tiempo = 0, fci4){
+    return(fci4*tiempo)
+}
+
 let cantidad,fondo,tiempo
 
-const fci1 = 0.6/365
-const fci2 = 0.5/365
-const fci3 = 0.7/365
-const fci4 = 1/365
 
+1
 console.log("A continuación vamos calcular el rendimiento de tu inversion en un Fondo Común de inversión")
 
 do {
@@ -33,18 +51,18 @@ console.log("Los datos son correctos")
 
 switch(fondo) {
         case fondo = 1:
-        alert(`El rendimiento es ${(cantidad * fci1 * tiempo).toFixed(2)} pesos en ${tiempo} dias`)
+            alert(`El rendimiento es ${(rendimiento(tiempo, fci1)*cantidad).toFixed(2)} pesos en ${tiempo} dias`)
         break
 
         case fondo = 2:
-        lert(`El rendimiento es ${(cantidad * fci1 * tiempo).toFixed(2)} pesos en ${tiempo} dias`)
+            alert(`El rendimiento es ${(rendimiento(tiempo, fci2)*cantidad).toFixed(2)} pesos en ${tiempo} dias`)
         break    
         case fondo = 3:
-        alert(`El rendimiento es ${(cantidad * fci1 * tiempo).toFixed(2)} pesos en ${tiempo} dias`)
+            alert(`El rendimiento es ${(rendimiento(tiempo, fci3)*cantidad).toFixed(2)} pesos en ${tiempo} dias`)
         break
 
         case fondo = 4:
-        alert(`El rendimiento es ${(cantidad * fci1 * tiempo).toFixed(2)} pesos en ${tiempo} dias`)
+            alert(`El rendimiento es ${(rendimiento(tiempo, fci4)*cantidad).toFixed(2)} pesos en ${tiempo} dias`)
         break        
         default:
         alert("fondo no existe")
