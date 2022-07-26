@@ -24,7 +24,7 @@ function rendimiento(tiempo = 0, fci4){
 let cantidad,fondo,tiempo
 
 
-1
+
 console.log("A continuación vamos calcular el rendimiento de tu inversion en un Fondo Común de inversión")
 
 do {
