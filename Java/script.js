@@ -13,6 +13,10 @@ function rendimiento(tiempo = 0, cuota = 0){
 let cantidad,fondo,tiempo,pregunta
 
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> e552cc5770fa0fb604491288c65e0a1b1ef51875
 console.log("A continuación vamos calcular el rendimiento de tu inversion en un Fondo Común de inversión")
 
 /*La siguiente Iteración valida la calidad de los datos para constatar si esta fuertemente tipado
