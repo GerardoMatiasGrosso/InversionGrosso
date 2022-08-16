@@ -5,22 +5,24 @@ fcis.forEach((Fci) => {
     divFondos.innerHTML += 
     
 `
-<div class="Fcis" >
-  <div class="card-body">
-    <h5 class="card-title">El fondo de inversión ${Fci.nombre}</h5>
+  <div class="Fcis">
+    <h5 class="tituloFondo">El fondo de inversión ${Fci.nombre}</h5>
     <p class="card-text">Tipo de Renta: ${Fci.tipoRenta}</p>
     <p class="card-text">Ratio de rendimiento: ${Fci.valorCuota}</p>
     <p class="card-text">Riesgo: ${Fci.riesgo}</p>
-
+    <p class="card-text">Nuemero de fondo: ${Fci.numeroFci}</p>
   </div>
-</div>
 `
 
+}
 
 
-})
 
-    
+)
+
+
+boton1.addEventListener("click", () => {
+
 
 
 function rendimiento(tiempo = 0, cuota = 0){
@@ -83,3 +85,4 @@ pregunta = parseFloat(prompt("si desea realizar otra inversión tipee 1, caso co
 console.log(pregunta)
 
 
+})
