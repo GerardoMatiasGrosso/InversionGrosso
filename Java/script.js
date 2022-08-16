@@ -1,6 +1,24 @@
 
+const divFondos = document.getElementById("divFondos")
+
+fcis.forEach((Fci) => {
+    divFondos.innerHTML += 
+    
+`
+<div class="Fcis" >
+  <div class="card-body">
+    <h5 class="card-title">El fondo de inversión ${Fci.nombre}</h5>
+    <p class="card-text">Tipo de Renta: ${Fci.tipoRenta}</p>
+    <p class="card-text">Ratio de rendimiento: ${Fci.valorCuota}</p>
+    <p class="card-text">Riesgo: ${Fci.riesgo}</p>
+
+  </div>
+</div>
+`
 
 
+
+})
 
     
 
@@ -9,14 +27,7 @@ function rendimiento(tiempo = 0, cuota = 0){
     return(cuota*tiempo)
 }
 
-
 let cantidad,fondo,tiempo,pregunta
-
-
-<<<<<<< HEAD
-=======
-
->>>>>>> e552cc5770fa0fb604491288c65e0a1b1ef51875
 console.log("A continuación vamos calcular el rendimiento de tu inversion en un Fondo Común de inversión")
 
 /*La siguiente Iteración valida la calidad de los datos para constatar si esta fuertemente tipado

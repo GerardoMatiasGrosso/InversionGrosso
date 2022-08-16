@@ -30,12 +30,3 @@ console.log(fci1.valorCuota)
 console.log(fci2.valorCuota)
 console.log(fci3.valorCuota)
 console.log(fci4.valorCuota)
-
-/*
-
-const fci1 = 0.0135
-const fci2 = 0.0200
-const fci3 = 0.1000
-const fci4 = 0.2000
-*/
-
