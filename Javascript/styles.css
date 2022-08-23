@@ -1,0 +1,40 @@
+.Fcis{
+
+    width: 18rem;
+    background-color: bisque;
+    margin: 3px;
+    display: grid;
+
+}
+
+.tituloFondo{
+
+    font-size: larger;
+    font-style: normal;
+    font-family: 'Times New Roman', Times, serif;
+   
+}
+
+.containerform{
+    margin-top: 300px;
+    width: 500px;
+    
+}
+
+.containerRentaFija{
+
+    display: flex;
+    margin-top: 1%;
+    margin-bottom: 3%;
+
+}
+
+
+.row{
+    display: grid;
+    grid-template-rows: auto 0.2fr 0.5fr 0.3fr auto;
+    
+    
+
+}
+

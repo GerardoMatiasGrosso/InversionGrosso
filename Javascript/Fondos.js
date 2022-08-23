@@ -11,6 +11,7 @@ constructor(nombre, tipoRenta, valorCuota, riesgo, numeroFci){
     this.numeroFci = numeroFci
 }
 
+
 }
 
 /*Constructor de FCI en adelante*/
@@ -31,3 +32,7 @@ console.log(fci1.valorCuota)
 console.log(fci2.valorCuota)
 console.log(fci3.valorCuota)
 console.log(fci4.valorCuota)
+
+
+
+

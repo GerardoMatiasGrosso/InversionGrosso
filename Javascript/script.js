@@ -1,4 +1,11 @@
 
+
+
+
+
+
+
+
 const divFondos = document.getElementById("divFondos")
 
 fcis.forEach((Fci) => {
@@ -86,3 +93,7 @@ console.log(pregunta)
 
 
 })
+
+
+localStorage.setItem("cartera", JSON.stringify([{diner: cantidad,inversion: fondo,plazo: tiempo }]))
+console.log(JSON.parse(localStorage.getItem("cartera")))
