@@ -43,7 +43,10 @@ console.log("A continuación vamos calcular el rendimiento de tu inversion en un
 */
 
 do {
+
      tiempo = parseFloat(prompt("Ingrese la cantidad de dias que desea invertir en numeros"))
+
+
      cantidad = parseFloat(prompt("Ingrese la cantidad de pesos que desea invertir"))
      fondo = parseFloat(prompt("ingrese el numero de fondo que desea invertir, tenga en cuenta que son del 1 al 4"))
 
@@ -62,7 +65,7 @@ do {
     
 } while (isNaN(cantidad) || isNaN(fondo) || isNaN(tiempo) || fondo < 1 || fondo > 4)
 
-console.log("Los datos son correctos")
+
 
 /*
 Calcula con la funcion rendimiento, teniendo en cuenta los dias, el fondo y la plata invertida
@@ -70,18 +73,48 @@ Calcula con la funcion rendimiento, teniendo en cuenta los dias, el fondo y la p
 
 switch(fondo) {
         case fondo = 1:
-            alert(`El rendimiento es ${(rendimiento(tiempo, cuota = fci1.valorCuota)*cantidad).toFixed(2)} pesos en ${tiempo} dias`)
+
+            Swal.fire({
+                position: 'top-end',
+                icon: 'success',
+                title: `El rendimiento es ${(rendimiento(tiempo, cuota = fci1.valorCuota)*cantidad).toFixed(2)} pesos en ${tiempo} dias`,
+                showConfirmButton: false,
+                timer: 10000
+              })
+
         break
 
         case fondo = 2:
-            alert(`El rendimiento es ${(rendimiento(tiempo, cuota = fci2.valorCuota)*cantidad).toFixed(2)} pesos en ${tiempo} dias`)
+
+            Swal.fire({
+                position: 'top-end',
+                icon: 'success',
+                title: `El rendimiento es ${(rendimiento(tiempo, cuota = fci2.valorCuota)*cantidad).toFixed(2)} pesos en ${tiempo} dias`,
+                showConfirmButton: false,
+                timer: 10000
+              })
+
         break    
         case fondo = 3:
-            alert(`El rendimiento es ${(rendimiento(tiempo, cuota = fci3.valorCuota)*cantidad).toFixed(2)} pesos en ${tiempo} dias`)
+
+            Swal.fire({
+                position: 'top-end',
+                icon: 'success',
+                title: `El rendimiento es ${(rendimiento(tiempo, cuota = fci3.valorCuota)*cantidad).toFixed(2)} pesos en ${tiempo} dias`,
+                showConfirmButton: false,
+                timer: 10000
+              })
+
         break
 
         case fondo = 4:
-            alert(`El rendimiento es ${(rendimiento(tiempo, cuota = fci4.valorCuota)*cantidad).toFixed(2)} pesos en ${tiempo} dias`)
+            Swal.fire({
+                position: 'top-end',
+                icon: 'success',
+                title: `El rendimiento es ${(rendimiento(tiempo, cuota = fci4.valorCuota)*cantidad).toFixed(2)} pesos en ${tiempo} dias`,
+                showConfirmButton: false,
+                timer: 10000
+              })
         break        
         default:
         alert("fondo no existe")
