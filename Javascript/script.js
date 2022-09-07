@@ -1,11 +1,5 @@
 
 
-
-
-
-
-
-
 const divFondos = document.getElementById("divFondos")
 
 fcis.forEach((Fci) => {
@@ -74,10 +68,15 @@ Calcula con la funcion rendimiento, teniendo en cuenta los dias, el fondo y la p
 switch(fondo) {
         case fondo = 1:
 
+            fetch("https://criptoya.com/api/dolar")
+            .then(response => response.json())
+            .then(({blue}) => { console.log(blue)})
+            dolar = parseFloat(blue)
+
             Swal.fire({
                 position: 'top-end',
                 icon: 'success',
-                title: `El rendimiento es ${(rendimiento(tiempo, cuota = fci1.valorCuota)*cantidad).toFixed(2)} pesos en ${tiempo} dias`,
+                title: `El rendimiento es ${(rendimiento(tiempo, cuota = fci2.valorCuota)*cantidad/dolar).toFixed(2)} pesos en ${tiempo} dias`,
                 showConfirmButton: false,
                 timer: 10000
               })
